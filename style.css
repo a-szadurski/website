@@ -1,0 +1,97 @@
+/* ##### Defaults ################ */
+
+nav, header, footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+/* ##### Header ################## */
+
+header {
+    background-color: rgba(59, 58, 58, 1);
+    color: #b0bded;
+}
+
+/* ##### Nav bar ################# */
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    color: #e5ecff;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(134, 139, 163, 1);
+}
+
+ul.nav-top li {
+    list-style: none;
+    float: left;
+}
+
+ul.nav-top li.nav-top-right {
+    list-style: none;
+    float: right;
+}
+
+ul.nav-top li a, button {
+    color: #e5ecff;
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 17px;
+}
+
+ul.nav-top li.dropdown-icon {
+    display: none;
+}
+
+ul.nav-top li.dropdown-icon button {
+    background-color:transparent;
+    border: none;
+}
+
+ul.nav-top li.dropdown-icon button:hover {
+    background-color: rgba(59, 58, 58, 1);
+}
+
+ul.nav-top li a:hover, button:hover {
+    background-color: rgba(59, 58, 58, 1);
+}
+
+/* ##### Mobile ########## */
+
+@media screen and (max-width: 1050px) {
+    ul.nav-top li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.nav-top li.dropdown-icon {
+        display: block;
+        float: right;
+    }
+    ul.nav-top.nav-top-mobile li.dropdown-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.nav-top.nav-top-mobile {
+        position: relative;
+    }
+    ul.nav-top.nav-top-mobile li {
+        display: inline;
+        float: none;
+    }
+    ul.nav-top.nav-top-mobile li a {
+        display: block;
+        text-align: left;
+    }
+}

@@ -10,12 +10,13 @@
         content="Poznaj kota! Strona poświęcona edukacji na temat pielęgnacji i behawioru kota wszelkiego pochodzenia." />
     <title>Poznaj kota! Dorota Szadurska, Centrum Edukacyjne. - Poznaj kota: Centrum Edukacyjne: Czytelnia.</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="mobile.js"></script>
 </head>
 
 <body>
     <header>
         <div>
-            <a href="/template.html">
+            <a href="#home">
                 <span>
                     Poznaj kota! Dorota Szadurska, Behawiorystka i terapeutka kocich zachowań.
                 </span>
@@ -23,17 +24,20 @@
         </div>
         <nav>
             <div>
-            <ul>
-                <li>HOME</li>
-                <li>O MNIE</li>
-                <li>JA I MOJE KOTY</li>
-                <li>CZYTELNIA</li>
-                <li>SEMINARIA, SZKOLENIA</li>
-                <li>KONTAKT</li>
-                <li>FORUM</li>
-                <li>OFERTA I CENNIK</li>
-            </ul>
-        </div>
+                <ul class="nav-top">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">O MNIE</a></li>
+                    <li><a href="#ja-moje-koty">JA I MOJE KOTY</a></li>
+                    <li><a href="#czytelnia">CZYTELNIA</a></li>
+                    <li><a href="#seminaria-szkolenia">SEMINARIA, SZKOLENIA</a></li>
+                    <li><a href="#oferta-cennik">OFERTA I CENNIK</a></li>
+                    <li class="nav-top-right"><a href="#forum">FORUM</a></li>
+                    <li class="nav-top-right"><a href="#kontakt">KONTAKT</a></li>
+                    <li class="dropdown-icon">
+                        <button class="dropdown-button" id="nav-dropdown">&#9776</button>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div>
